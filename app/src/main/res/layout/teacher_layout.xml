@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teacher Use"
+        android:textColor="@color/btn_press"
+        android:textSize="30dp"
+        android:id="@+id/textView3"
+        android:layout_marginTop="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="111dp"
+        android:text="点名"
+        style="@style/SmsButton"
+        android:textColor="@color/colorWrite"
+        android:layout_below="@+id/textView3"
+        android:layout_toLeftOf="@+id/call_course"
+        android:layout_toStartOf="@+id/call_course"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp" />
+
+    <EditText
+        android:id="@+id/call_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="输入需要点名的课程号"
+        android:textColor="@color/colorWrite"
+        android:textColorHint="@color/colorWrite"
+        android:layout_alignBottom="@+id/call"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp" />
+
+    <Button
+        android:id="@+id/show_iscome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查看点名情况"
+        android:textColor="@color/colorWrite"
+        style="@style/SmsButton"
+        android:layout_alignBottom="@+id/iscome_course"
+        android:layout_alignLeft="@+id/call"
+        android:layout_alignStart="@+id/call" />
+
+    <EditText
+        android:id="@+id/iscome_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入课程编号"
+        android:textColor="@color/colorWrite"
+        android:textColorHint="@color/colorWrite"
+        android:layout_below="@+id/call_course"
+        android:layout_alignRight="@+id/call_course"
+        android:layout_alignEnd="@+id/call_course"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="88dp" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发布消息"
+        android:textColorHint="@color/colorWrite"
+        android:textColor="@color/colorWrite"
+        style="@style/SmsButton"
+        android:layout_below="@+id/show_iscome"
+        android:layout_alignLeft="@+id/show_iscome"
+        android:layout_alignStart="@+id/show_iscome"
+        android:layout_marginTop="41dp" />
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="输入需要发布的信息"
+        android:textColor="@color/colorWrite"
+        android:textColorHint="@color/colorWrite"
+        android:layout_alignBottom="@+id/send"
+        android:layout_alignRight="@+id/call_course"
+        android:layout_alignEnd="@+id/call_course" />
+
+    <Button
+        android:id="@+id/show_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查看已发布的消息"
+        style="@style/SmsButton"
+        android:textColor="@color/colorWrite"
+        android:layout_above="@+id/call_course"
+        android:layout_alignLeft="@+id/call"
+        android:layout_alignStart="@+id/call"
+        android:layout_marginBottom="21dp" />
+
+    <!--
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上传"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/send"
+        android:layout_alignStart="@+id/send"
+        android:layout_marginBottom="19dp" />
+        -->
+
+    <!--
+    <EditText
+        android:id="@+id/upload_fileDir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="输入文件路径"
+        android:layout_alignBottom="@+id/upload"
+        android:layout_alignLeft="@+id/message"
+        android:layout_alignStart="@+id/message" />
+        -->
+
+
+
+</RelativeLayout>
+

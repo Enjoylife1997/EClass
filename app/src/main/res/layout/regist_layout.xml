@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 此Activity采用相对布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    >
+    <!-- TextView相当于Java中的标签组件,下面是对其属性的设置 -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textColor="@color/btn_press"
+        android:textSize="30dip" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dip"
+        android:text="用户名"
+        android:textColor="@color/btn_press"
+        android:layout_alignBaseline="@+id/username"
+        android:layout_alignBottom="@+id/username"
+        android:layout_alignRight="@+id/user_password"
+        android:layout_alignEnd="@+id/user_password" />
+    <!-- 文本编辑框 -->
+
+    <TextView
+        android:id="@+id/user_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dip"
+        android:text="密码"
+        android:textColor="@color/btn_press"
+        android:layout_marginRight="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_alignBaseline="@+id/password"
+        android:layout_alignBottom="@+id/password"
+        android:layout_toLeftOf="@+id/password"
+        android:layout_toStartOf="@+id/password" />
+
+    <EditText
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWrite"
+        android:textSize="20dip"
+        android:id="@+id/username"
+        android:textColorHint="@color/colorWrite"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/title"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:maxLines="1"
+        android:hint="username"/>
+    <!-- maxLines设置EditText最大行数,hint设置提示性文本 -->
+
+
+
+
+    <EditText
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textSize="20dip"
+        android:textColor="@color/colorWrite"
+        android:id="@+id/password"
+        android:layout_marginRight="62dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/username"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:maxLines="1"
+        android:hint="password"
+        android:textColorHint="@color/colorWrite"/>
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dip"
+        android:text="确定"
+        android:textColor="@color/colorWrite"
+        android:id="@+id/YES"
+        android:background="@color/btn_press"
+        android:layout_marginBottom="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/user_password"
+        android:layout_alignStart="@+id/user_password"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NO"
+        android:textSize="20dip"
+        android:text="取消"
+        android:background="@color/btn_press"
+        android:textColor="@color/colorWrite"
+        android:layout_alignBaseline="@+id/YES"
+        android:layout_alignBottom="@+id/YES"
+        android:layout_alignRight="@+id/password"
+        android:layout_alignEnd="@+id/password" />
+
+    <EditText
+        android:id="@+id/studentid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入你的学号"
+        android:textColor="@color/colorWrite"
+        android:textColorHint="@color/colorWrite"
+        android:maxLines="1"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password" />
+    <TextView
+        android:text="学号"
+        android:textSize="20dip"
+        android:textColor="@color/btn_press"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/user_password"
+        android:layout_alignStart="@+id/user_password" />
+    
+    <TextView
+        android:textSize="20dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="教师编号"
+        android:textColor="@color/btn_press"
+        android:layout_alignBaseline="@+id/teacherid"
+        android:layout_alignBottom="@+id/teacherid"
+        android:layout_alignLeft="@+id/user_name"
+        android:layout_alignStart="@+id/user_name" />
+
+    <EditText
+        android:id="@+id/teacherid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入教师编号"
+        android:textColor="@color/colorWrite"
+        android:textColorHint="@color/colorWrite"
+        android:layout_below="@+id/studentid"
+        android:layout_alignLeft="@+id/studentid"
+        android:layout_alignStart="@+id/studentid"
+        android:layout_marginTop="16dp" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/init_data"
+            android:icon="@drawable/initdata"
+            android:title="导入数据"/>
+
+        <item
+            android:id="@+id/show_course"
+            android:icon="@drawable/showcourse"
+            android:title="查看课程"/>
+
+        <item
+            android:id="@+id/show_test"
+            android:icon="@drawable/showtest"
+            android:title="测试题"/>
+
+        <item
+            android:id="@+id/show_message"
+            android:icon="@drawable/showmessage"
+            android:title="消息通知"/>
+
+
+
+
+
+    </group>
+
+</menu>

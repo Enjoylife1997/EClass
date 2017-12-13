@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 此Activity采用相对布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    >
+    <!-- TextView相当于Java中的标签组件,下面是对其属性的设置 -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="69dp"
+        android:gravity="center"
+        android:text="EClass"
+        android:textColor="@color/colorWrite"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/colorWrite"
+        android:textSize="18sp"
+        android:layout_above="@+id/user_password"
+        android:layout_toLeftOf="@+id/remember_pass"
+        android:layout_toStartOf="@+id/remember_pass"
+        android:layout_marginBottom="16dp" />
+    <!-- 文本编辑框 -->
+
+    <TextView
+        android:id="@+id/user_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title"
+        android:layout_centerVertical="true"
+        android:text="Password"
+        android:textColor="@color/colorWrite"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textSize="20dip"
+        android:id="@+id/username"
+        android:textColor="@color/colorWrite"
+        android:digits="@string/user_name"
+        android:maxLines="1"
+        android:layout_alignBaseline="@+id/user_name"
+        android:layout_alignBottom="@+id/user_name"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password" />
+    <!-- maxLines设置EditText最大行数,hint设置提示性文本 -->
+
+
+
+
+    <EditText
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textSize="20dip"
+        android:id="@+id/password"
+        android:digits="@string/pass_word"
+        android:textColor="@color/colorWrite"
+        android:maxLines="1"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/title"
+        android:layout_alignEnd="@+id/title" />
+
+    <TextView
+
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:text="LOGIN"
+        android:textColor="@color/colorWrite"
+        android:id="@+id/tv_sign_up"
+        android:background="@drawable/selector_btn_bg"
+        android:layout_marginBottom="85dp"
+        android:layout_above="@+id/regist"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click to SIGN UP"
+        android:textColor="@color/btn_press"
+        android:textSize="15sp"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/password"
+        android:layout_alignEnd="@+id/password" />
+
+
+
+
+    <CheckBox
+        android:id="@+id/remember_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember password"
+        android:textColor="@color/colorWrite"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@+id/remember_pass"
+        android:layout_alignBottom="@+id/remember_pass"
+        android:layout_alignRight="@+id/tv_sign_up"
+        android:layout_alignEnd="@+id/tv_sign_up" />
+
+
+    <com.example.eclass.Tools.TransitionView
+        android:id="@+id/ani_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
